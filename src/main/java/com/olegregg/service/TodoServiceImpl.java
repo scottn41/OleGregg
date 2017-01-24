@@ -18,12 +18,12 @@ public class TodoServiceImpl implements TodoService {
 
     @Override
     public List<ToDo> findAllTodo() {
-        return null;
+        return todoRepository.findAll();
     }
 
     @Override
     public ToDo findTodoByGuid(String guid) {
-        return null;
+        return todoRepository.findByGuid(guid);
     }
 
     @Override
