@@ -7,6 +7,6 @@ import java.util.List;
 public interface TodoService {
 
     List<Todo> findAllTodo();
-    List<Todo> findTodoByGuid(String guid);
+    Todo findTodoByGuid(String guid);
 
 }

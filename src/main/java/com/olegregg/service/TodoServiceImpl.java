@@ -14,7 +14,7 @@ public class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    public List<Todo> findTodoByGuid(String guid) {
+    public Todo findTodoByGuid(String guid) {
         return null;
     }
 }
