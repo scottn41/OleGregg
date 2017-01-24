@@ -9,4 +9,6 @@ public interface TodoService {
     List<ToDo> findAllTodo();
     ToDo findTodoByGuid(String guid);
 
+    ToDo addToDo(ToDo todo);
+
 }
