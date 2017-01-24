@@ -1,6 +1,6 @@
 package com.olegregg.controller;
 
-import com.olegregg.domain.Todo;
+import com.olegregg.domain.ToDo;
 import com.olegregg.service.TodoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,12 +18,12 @@ public class ToDoQueryController {
     @Resource private TodoService todoService;
 
     @RequestMapping(method= RequestMethod.GET, value="/todo/{guid}")
-    public ResponseEntity<Todo> getSingleTodo(@PathVariable String guid) {
+    public ResponseEntity<ToDo> getSingleTodo(@PathVariable String guid) {
         return ResponseEntity.ok(todoService.findTodoByGuid(guid));
     }
 
     @RequestMapping(method=RequestMethod.GET, value="/todo")
-    public ResponseEntity<List<Todo>> getAllTodo() {
+    public ResponseEntity<List<ToDo>> getAllTodo() {
         return ResponseEntity.ok(todoService.findAllTodo());
     }
 }

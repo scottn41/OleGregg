@@ -1,6 +1,6 @@
 package com.olegregg.domain;
 
-public enum TodoStatus {
+public enum ToDoStatus {
 
     NEW,
     COMPLETE

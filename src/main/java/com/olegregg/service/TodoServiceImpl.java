@@ -1,6 +1,6 @@
 package com.olegregg.service;
 
-import com.olegregg.domain.Todo;
+import com.olegregg.domain.ToDo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,12 +9,12 @@ import java.util.List;
 public class TodoServiceImpl implements TodoService {
 
     @Override
-    public List<Todo> findAllTodo() {
+    public List<ToDo> findAllTodo() {
         return null;
     }
 
     @Override
-    public Todo findTodoByGuid(String guid) {
+    public ToDo findTodoByGuid(String guid) {
         return null;
     }
 }

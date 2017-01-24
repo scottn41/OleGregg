@@ -1,8 +1,8 @@
 package com.olegregg.repository;
 
-import com.olegregg.domain.Todo;
+import com.olegregg.domain.ToDo;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface TodoRepository extends MongoRepository<Todo, String> {
+public interface TodoRepository extends MongoRepository<ToDo, String> {
 
 }

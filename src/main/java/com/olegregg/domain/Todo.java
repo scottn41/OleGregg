@@ -2,10 +2,10 @@ package com.olegregg.domain;
 
 import java.util.Date;
 
-public class Todo {
+public class ToDo {
 
     private String guid;
-    private TodoStatus status;
+    private ToDoStatus status;
     private Date created;
     private Date updated;
 
@@ -17,11 +17,11 @@ public class Todo {
         this.guid = guid;
     }
 
-    public TodoStatus getStatus() {
+    public ToDoStatus getStatus() {
         return status;
     }
 
-    public void setStatus(TodoStatus status) {
+    public void setStatus(ToDoStatus status) {
         this.status = status;
     }
 
